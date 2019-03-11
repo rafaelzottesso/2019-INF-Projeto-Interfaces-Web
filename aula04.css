@@ -1,0 +1,43 @@
+ html, body, .menu, .cabecalho, .conteudo, .rodape{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+body {
+  background-color: #DCDCDC;
+}
+
+/* As classes são representadas pelo ponto final.
+.nomeDaClasse é um exemplo */
+.menu{
+  background-color: #333333;
+  /* Color altera a cor da fonte */
+  color: #ADD8E6;
+  /* Altera o tamanho da font */
+  font-size: 20px;
+
+}
+
+/* Um ID é representado pelo sinal #.
+#nomeDoId é um exemplo de utilização do CSS com ID. */
+#rodapePrincipal {
+  text-align: center;
+}
+
+.rodape{
+  background-color: #333333;
+  color: #EFEFEF;
+}
+
+.conteudo{
+  /* Definir o estilo da borda */
+  border-style: solid;
+  /* define o tamanho da borda (largura) */
+  border-width: 2px;
+  /* Cor da borda */
+  border-color: #006400;
+
+  /* "Margem interna" pode ser alterada utilizando o padding */
+  padding: 10px;
+}
