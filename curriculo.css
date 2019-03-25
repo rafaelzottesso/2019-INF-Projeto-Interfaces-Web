@@ -1,0 +1,29 @@
+* {
+
+}
+
+#curriculo {
+  background-color: yellow;
+
+  /* Define a largura de um elemento/tag */
+  width: 800px;
+  /* Definir '0' ou outro valor para as margens de cima e de baixo
+  e "auto" para as margens laterais */
+  margin: 0px auto;
+
+}
+
+/* float serve para "flutuar" um elemento. Pode ser direita ou esquerda */
+.nome{
+  float: left;
+}
+
+.dados-pessoais{
+  float: right;
+}
+
+/* Depois de usar o float, o restante do site vai ocupar o espaço vazio que tem
+próximo dos elementos flutuantes. Por isso, precisamos "cancelar" esse efeito. */
+.limpar-float{
+  clear: both;
+}
