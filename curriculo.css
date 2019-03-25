@@ -1,5 +1,7 @@
 * {
-
+  /* Define a fonte que você importou em algum elemento.
+  Neste caso, em todo o site por causa do *. */
+  font-family: 'Roboto', sans-serif;
 }
 
 #curriculo {
