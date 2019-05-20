@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução do jQuery</title>
+
+    <!-- Importação do CSS Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+
+    <!-- Importação do jQUery -->
+    <script src="js/jquery-3.4.1.js" ></script>
+
+    <!-- Utilização do Javascript, jquery -->
+    <script>
+      // Aqui vai todo o código JS
+      // Este é um exemplo de evento para garantir que todo código
+      // só será executado quando o documento estiver pronto (100% carregado pelo navegador)
+      $(document).ready( function(){
+
+        // Cria um evento ao clicar no botão com o id
+        $("#btnEsconder").click(function(){
+
+          // Executa uma ação para esconder todos os parágrafos
+          $("p").hide();
+
+          // Mais ações podem ser executadas aqui...
+
+        }); // fim do evento de click
+
+
+        // Funções para funcionar com as abas
+        $("#btnPessoais").click(function(event) {
+          // Esconde todos os elementos com a classe "aba"
+          $(".aba").hide();
+          // Mostra a div com efeito
+          $(".dadosPessoais").fadeIn();
+        });
+
+        // Funções para funcionar com as abas
+        $("#btnContato").click(function(event) {
+          // Esconde todos os elementos com a classe "aba"
+          $(".aba").hide();
+          // Mostra a div com efeito
+          $(".dadosContato").fadeIn();
+        });
+
+        // Funções para funcionar com as abas
+        $("#btnAcademico").click(function(event) {
+          // Esconde todos os elementos com a classe "aba"
+          $(".aba").hide();
+          // Mostra a div com efeito
+          $(".dadosAcademicos").fadeIn();
+        });
+
+
+      } ); // fim do ready
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h2>Introdução ao jQuery</h2>
+
+      <p>Rafael Henrique Dalegrave Zottesso</p>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="btnEsconder">
+        Esconder
+      </button>
+
+      <hr>
+
+      <h2>Exemplo com Abas</h2>
+
+      <div class="">
+        <button type="button" class="btn btn-primary" id="btnPessoais">Dados pessoais</button>
+        <button type="button" class="btn btn-info" id="btnContato">Dados de contato</button>
+        <button type="button" class="btn btn-success" id="btnAcademico">Dados acadêmicos</button>
+      </div>
+
+      <div class="aba dadosPessoais" style="display: none;">
+        Dados pessoais
+      </div>
+
+      <div class="aba dadosContato" style="display: none;">
+        Dados de contato
+      </div>
+
+      <div class="aba dadosAcademicos" style="display: none;">
+        Dados acadêmicos
+      </div>
+
+    </div>
+
+  </body>
+</html>
