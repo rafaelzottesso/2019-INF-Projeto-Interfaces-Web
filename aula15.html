@@ -14,16 +14,26 @@
           <h3>Formulários de cadastro</h3>
           <hr>
 
+          <!-- O action é o arquivo para onde os dados deste formulário serão enviados
+          method se refere a como esses dados serão enviados.
+          - get - pela url
+          - post - empacotados -->
           <form action="" method="get">
 
+            <!-- label serve apenas de etiqueta para o campo -->
             <label>Nome:</label><br>
+            <!-- Todo input tem que ter um type (tipo) e um name (identificação)
+            O name é a identificação do campo lá no action deste formulário -->
             <input type="text" name="nome" value=""><br>
 
             <label>Data de Nascimento:</label><br>
             <input type="date" name="nascimento" value=""><br>
 
             <label>Cidade:</label><br>
+            <!-- O select também tem um name -->
             <select name="cidade">
+              <!-- Cada opção desse select tem que ser criada com um option.
+              A ordem de criação é a mesma de exebição. -->
               <option value="">Selecione uma cidade</option>
               <option value="1">Paranavaí</option>
               <option value="2">Alto Paraná</option>
