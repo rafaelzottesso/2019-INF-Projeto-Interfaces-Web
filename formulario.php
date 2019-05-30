@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <title>Formulários em HTML</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
   </head>
-  <body>
+  <body class="bg-secondary">
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mx-auto py-5">
+        <div class="col-md-5 mx-auto m-5 p-5 bg-light">
 
           <h3>Autenticação</h3>
           <hr>

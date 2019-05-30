@@ -9,5 +9,8 @@ $senha = $_REQUEST['senha'];
 
 echo "O login: $login possui a senha: $senha";
 
+// Agora com os dados armazenados é possível se conectar com o banco
+// e montar instruções para inserir, etc.
+
 
 ?>
