@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulários em HTML</title>
+    <!-- Importa primeiro o Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <!-- Depois importa o DataTables -->
+    <link rel="stylesheet" href="datatables/datatables.css">
+</head>
+
+<body>
+
+    <div class="container mt-2 p-4">
+        <div class="row">
+            <div class="col-md">
+
+                <h3>Importação do jQuery e demais bibliotecas</h3>
+                <hr>
+
+                <!-- Definir um ID para esta tabela -->
+                <table class="table table-striped" id="tabela">
+
+                    <!-- A primeira linha fica dentro do THEAD -->
+                    <thead>
+                        <tr>
+                            <!-- Crie cada uma das colunas -->
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+
+                    <!-- As demais ficam dentro do TBODY -->
+                    <tbody>
+                        <tr>
+                            <td>Fulano de Tal</td>
+                            <td>(44) 99999-1234</td>
+                            <td>fulano@tal.com.br</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ciclano de Tal</td>
+                            <td>(44) 99999-4321</td>
+                            <td>ciclano@tal.com.br</td>
+                        </tr>
+
+                        <tr>
+                            <!-- primeira coluna -->
+                            <td>IFPR</td>
+                            <!-- segunda coluna -->
+                            <td>
+                                Logomarca
+                                <img src="http://www.telemacoborba.pr.gov.br/images/2019/fevereiro/IFPR.png" height="40"
+                                    alt="">
+                            </td>
+                            <!-- terceira coluna -->
+                            <td>
+                                <!-- No lugar de # coloque o link de destino http://.... -->
+                                <a href="#">Ver site</a>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Importações JS no final para não demorar para mostar o conteúdo -->
+
+    <!-- 1 - Importe jQuery -->
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+    <!-- 2 - Importe o Popper js -->
+    <script src="js/popper.min.js" charset="utf-8"></script>
+    <!-- 3 - Importar o JS do Bootstrap -->
+    <script src="bootstrap/bootstrap.min.js" charset="utf-8"></script>
+    <!-- 4 - Importar o js do DataTables -->
+    <script src="datatables/datatables.js"></script>
+
+    <!-- Executa seu codigo jquery -->
+    <script>
+        $(document).ready(function(){
+
+            // Como usar o DataTable
+            // 1 - Fazer Download com o Style Bootstrap 4 e Package DataTables: https://datatables.net/download/
+            // 2 - Importar o CSS depois do bootstrap.css
+            // 3 - Importar o JS depois do jquery e do bootstrap
+            // 4 - Criar um document.ready.....
+            // 5 - Definir um ID para a tabela e as class="table table-striped", por exemplo
+            // 6 - "Chamar" o plugin DataTables
+            $("#tabela").DataTable();
+
+        });
+    </script>
+
+</body>
+
+</html>
